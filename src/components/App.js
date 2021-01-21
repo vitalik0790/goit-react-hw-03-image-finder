@@ -35,7 +35,7 @@ class App extends Component {
                 this.setState({ imgList: [...response] })
             })
             .catch(error => this.setState({ error }))
-            .finally(() => this.setState({ loading: false, query: "" }))
+            .finally(() => this.setState({ loading: false }))
     }
 
     loadMore = () => {
