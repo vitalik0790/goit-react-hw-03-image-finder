@@ -35,7 +35,7 @@ class App extends Component {
                 this.setState({ imgList: [...response] })
             })
             .catch(error => this.setState({ error }))
-            .finally(() => this.setState({ loading: false }))
+            .finally(() => this.setState({ loading: false, query: "" }))
     }
 
     loadMore = () => {
@@ -65,7 +65,7 @@ class App extends Component {
 
 
     render() {
-        const { query, imgList, loading, largeImageURL, showModal, error, hideBtn } = this.state;
+        const { query, imgList, loading, largeImageURL, showModal, hideBtn } = this.state;
         return (
             <div>
                 <SearchBar

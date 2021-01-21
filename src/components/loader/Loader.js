@@ -8,7 +8,10 @@ const override = css`
 `;
 
 const Loader = () => {
-    return <SyncLoader color="#cc283d" loading="true" css={override} size={15} />;
+  return <SyncLoader color="#cc283d" loading="true" css={override} size={15} />;
 };
 
 export default Loader;
+
+// https://openbase.com/js/react-spinners
+// npm i react - spinners 
